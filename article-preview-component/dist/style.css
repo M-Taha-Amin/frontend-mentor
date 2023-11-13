@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: manrope;
+  line-height: 1.4;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 50rem;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+}
+
+p {
+  max-width: 28.125rem;
+}
+
+.drawers-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.content {
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.main-txt {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.secondary-txt {
+  color: hsl(214, 17%, 51%);
+  margin: 1rem 0;
+}
+
+.auth-profile {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-pfp img {
+  width: 3.125rem;
+  border-radius: 50%;
+}
+
+.auth-name {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+}
+
+.date {
+  color: hsl(212, 23%, 69%);
+  font-size: 0.875rem;
+}
+
+.share {
+  position: relative;
+  justify-self: end;
+  background-color: hsl(210, 46%, 95%);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.share img {
+  cursor: pointer;
+}
+
+.active-links {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  padding: 1rem 1.5rem;
+  position: absolute;
+  display: flex;
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  bottom: 160%;
+  left: -240%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.active-links span {
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+.active-links::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0.75rem;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (max-width: 810px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    margin: 2rem 0;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .drawers-img {
+    border-radius: 1rem 1rem 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
