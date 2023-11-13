@@ -1,0 +1,45 @@
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+body {
+  font-family: "Red Hat Display", "sans-serif";
+  background: url(../dist/images/pattern-background-desktop.svg) no-repeat;
+  background-color: $pale-blue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+}
+button {
+  display: block;
+}
+
+// Utility Classes
+.txt-bold {
+  font-weight: 900;
+}
+.txt-light {
+  color: $desaturated-blue;
+}
+.txt-sm {
+  font-size: .875rem;
+}
+.txt-big {
+  font-size: 1.5625rem;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-darkblue {
+  color: $dark-blue;
+}
