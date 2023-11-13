@@ -1,0 +1,28 @@
+@import "partials/base", "partials/variables", "partials/results",
+  "partials/summary";
+
+body {
+  background-color: white;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(#000000, 0.3);
+  border-radius: 1rem;
+  max-width: 46rem;
+}
+
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-shadow: none;
+  }
+  .results {
+    border-radius: 0 0 1rem 1rem;
+  }
+}

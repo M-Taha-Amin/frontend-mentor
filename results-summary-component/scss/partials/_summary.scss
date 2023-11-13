@@ -1,0 +1,77 @@
+.summary {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.summary-title {
+  color: $dark-gray-blue;
+}
+.summary-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+.summary-item {
+  padding: 1rem 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+}
+.summary-item--badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.summary-item--icon {
+  display: flex;
+  align-items: center;
+}
+.summary-item--score {
+  font-size: 0.9375rem;
+}
+.summary-item--score span {
+  color: $dark-gray-blue;
+  font-weight: bold;
+}
+.summary-item--1 {
+  background-color: $bg-red;
+  .summary-item--name {
+    color: $light-red;
+  }
+}
+.summary-item--2 {
+  background-color: $bg-orange-yellow;
+  .summary-item--name {
+    color: $orangey-yellow;
+  }
+}
+.summary-item--3 {
+  background-color: $bg-green-teal;
+  .summary-item--name {
+    color: $green-teal;
+  }
+}
+.summary-item--4 {
+  background-color: $bg-cobalt-blue;
+  .summary-item--name {
+    color: $cobalt-blue;
+  }
+}
+.summary-button {
+  color: white;
+  border: none;
+  border-radius: 100vw;
+  background-color: $dark-gray-blue;
+  padding: 1rem 0;
+  font-size: 1.0625rem;
+  cursor: pointer;
+  &:hover {
+    background: $primary-gradient;
+  }
+  &:active {
+    scale: 0.99;
+    opacity: 0.9;
+  }
+}
